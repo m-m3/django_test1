@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Dashboard Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    {% block css %}
+    {% endblock %}
+</head>
+
+<body>
+<div class="container">
+    <div class="jumbotron" style="height: 300px;">
+    </div>
+    <div class="d-flex">
+        <form class="" action="" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="username" >نام کاربری</label>
+                <input type="text" name="username" class="form-control" placeholder="نام کاربری">
+            </div>
+            <div class="form-group" >
+                <label for="password">گذرواژه</label>
+                <input type="password" class="form-control" name="password" placeholder="گذرواژه">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-outline-danger" name="submit" >
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster-->
+<script src="js/popper.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+{% block js %}
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/Vazir.woff");
+}
+
+body{
+    direction: rtl;
+    text-align: right !important;
+    font-family: "vazir";
+    line-height: 1.6;
+}
